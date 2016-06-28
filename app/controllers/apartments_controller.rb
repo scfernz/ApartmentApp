@@ -10,6 +10,7 @@ class ApartmentsController < ApplicationController
       marker.lng apartment.longitude
       marker.infowindow apartment.address
     end
+    @user = User.all
   end
 
   # GET /apartments/1
@@ -80,6 +81,7 @@ class ApartmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def apartment_params
-      params.require(:apartment).permit(:latitude, :longitude, :address, :name, :contact, :bed, :bath, :price, :description, :image)
+      params.require(:apartment).permit(:latitude, :longitude, :address, :name, :contact, :bed, :bath, :price, :description, :image, :user_id)
     end
+
 end

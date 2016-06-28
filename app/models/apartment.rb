@@ -1,4 +1,5 @@
 class Apartment < ActiveRecord::Base
+  belongs_to :users
   geocoded_by :address
   after_validation :geocode
   has_attached_file :image, styles: { medium: "300x300>", large: "600x600>", thumb: "100x100>" }
