@@ -53,6 +53,9 @@ Devise.setup do |config|
   # modifying a user and when used to authenticate or find a user. Default is :email.
   config.strip_whitespace_keys = [:email]
 
+  # Declare provider
+  config.omniauth :twitter, "gggJoqHLAhglUuJXv3KW4fAzC", "gCXGKj3hYe3QW4pYs10uc2hvQ21yeZXVfm6RqbRwfNPPJcdsUF", callback_url: "	http://127.0.0.1:3000/users/omniauth_callbacks"
+
   # Tell if authentication through request.params is enabled. True by default.
   # It can be set to an array that will enable params authentication only for the
   # given strategies, for example, `config.params_authenticatable = [:database]` will

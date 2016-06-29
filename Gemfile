@@ -21,19 +21,22 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
-#google APIs
+# google APIs
 gem 'bootstrap-generators'
 gem 'geocoder'
 gem 'gmaps4rails'
 
-#paperclip
+# paperclip
 gem 'paperclip'
 
-#textacular
+# textacular
 gem 'textacular', '~> 3.0'
 
-#devise
+# devise
 gem 'devise'
+
+# omniauth for twitter
+gem 'omniauth-twitter'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
