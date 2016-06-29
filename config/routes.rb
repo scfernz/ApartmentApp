@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'search/search'
+
   resources :users
   resources :apartments
   # The priority is based upon order of creation: first created -> highest priority.

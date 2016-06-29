@@ -29,6 +29,9 @@ gem 'gmaps4rails'
 #paperclip
 gem 'paperclip'
 
+#textacular
+gem 'textacular', '~> 3.0'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
