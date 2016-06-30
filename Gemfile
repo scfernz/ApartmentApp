@@ -38,6 +38,10 @@ gem 'devise'
 # omniauth for twitter
 gem 'omniauth-twitter'
 
+# CanCanCan and Rolify for Authorization and Roles
+gem 'cancancan'
+gem 'rolify'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

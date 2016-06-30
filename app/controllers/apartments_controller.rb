@@ -1,6 +1,6 @@
 class ApartmentsController < ApplicationController
   before_action :set_apartment, only: [:show, :edit, :update, :destroy]
-
+  load_and_authorize_resource
   # GET /apartments
   # GET /apartments.json
   def index
@@ -37,7 +37,8 @@ class ApartmentsController < ApplicationController
   # POST /apartments.json
   def create
     @apartment = Apartment.new(apartment_params)
-
+    @apartment.user_id = current_user.id
+    
     respond_to do |format|
       if @apartment.save
         format.html { redirect_to @apartment, notice: 'Apartment was successfully created.' }
